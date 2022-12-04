@@ -1,0 +1,14 @@
+:root {
+    --bg-color: #FFFFFF;
+    --hero-color: #2F303A;
+    --title-color: #212121;
+}
+
+body {
+    background-color: var(--bg-color);
+}
+
+.section.hero {
+    background-color: var(--hero-color);
+    color: #FFFFFF;
+}
