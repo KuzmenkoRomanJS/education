@@ -6,4 +6,5 @@ Some education folders with learning from scratch the skills needed for a Front-
 3. HTML+CSS layout (margin+padding properties & flexbox).
 4. HTML+CSS layout (work with svg icons).
 5. HTML+CSS layout (add animation on element and active order button (modal window).
-6. UPD.
+6. HTML+CSS layout (work with modal form and with footer (add subcribe form)).
+7. UPD.
