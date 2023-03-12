@@ -1,0 +1,30 @@
+.doing__list {
+    display: flex;
+    @include reset-last-gap($card-set-gap);
+    justify-content: center;
+    &>.doing__item {
+        margin-right: $card-set-gap;
+        @include size-flex-item(3, $card-set-gap);
+    }
+}
+
+.doing__item {
+    position: relative;
+}
+
+.doing__text {
+    @extend %align-items;
+
+    position: absolute;
+    bottom: 0;
+
+    width: 370px;
+    height: 70px;
+
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: $main-white-color;
+    background-color: $doing-gradient;
+}

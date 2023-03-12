@@ -1,0 +1,23 @@
+.section {
+    padding: 94px 0;
+    &.hero {
+        padding-bottom: 200px;
+        padding-top: 200px;
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: $hero-footer-color;
+        background-image: linear-gradient(to right,
+                $hero-gradient,
+                $hero-gradient),
+            url('../images/hero-min.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        text-align: center;
+    }
+    &.doing {
+        padding-top: 0px;
+    }
+}
+

@@ -1,0 +1,41 @@
+.hero__title {
+    @include fonts(44px, 1.4, 0.06em, 900);
+    text-align: center;
+    text-transform: uppercase;
+    color: $hero-color;
+    margin-bottom: $card-set-gap;
+}
+
+.benefits__titles {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    color: $caption-color;
+    text-transform: uppercase;
+}
+
+.titles {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.18;
+    text-align: center;
+    color: $caption-color;
+}
+
+.doing__title,
+.team__title,
+.clients-section__title {
+    @extend .titles;
+    margin-bottom: 50px;
+}
+
+.team__titles {
+    font-weight: 500;
+    font-size: 16px;
+    @extend .titles;
+}
+
+.portfolio__titles {
+    @include fonts(18px, 2, 0.06em, 700);
+    color: $caption-color;
+}

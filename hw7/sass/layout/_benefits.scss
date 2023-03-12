@@ -1,0 +1,24 @@
+.benefits__list {
+    display: flex;
+    @include reset-last-gap($card-set-gap);
+}
+
+.benefits__item {
+    @include size-flex-item(4, $card-set-gap);
+    margin-right: $card-set-gap;
+    & .icon {
+        width: 70px;
+        height: 70px;
+    }
+    & .thumb {
+        @extend %align-items;
+        margin-bottom: $card-set-gap;
+        background-color: $filter-bg-color;
+        border-radius: 4px;
+        width: 270px;
+        height: 120px;
+    }
+    &>.benefits__text {
+        line-height: 1.714;
+    }
+}

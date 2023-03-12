@@ -1,0 +1,15 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    @include fonts(14px, 1.14, 0.03em, 400);
+    color: $main-body-color;
+    background-color: $main-white-color;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    @extend .link; //наслідування, якщо в оголоженні є , або повторюється код в інших класах
+    list-style-type: none;
+}
