@@ -1,0 +1,122 @@
+.callback-form {
+  &__label {
+    display: block;
+    @include fonts(12px, 1.167, 0.01em);
+    margin-bottom: 4px;
+  }
+
+  &__input-wrapper {
+    position: relative;
+    display: block;
+    height: 100%;
+  }
+
+  &__input {
+    height: 40px;
+    width: 100%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding-left: 42px;
+    padding-right: 20px;
+    outline: none;
+    transition: border-color $transition-time $transition-func;
+
+    &:focus+.callback-form__icon {
+      fill: $hero-button-color;
+    }
+
+    &:focus {
+      border-color: $hero-button-color;
+    }
+  }
+
+  &__input-block {
+    margin-bottom: 10px;
+  }
+
+  &__comment {
+    padding: 12px 16px;
+    height: 120px;
+    width: 100%;
+    resize: none;
+    outline: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-bottom: 20px;
+    transition: border-color $transition-time $transition-func;
+
+    &::placeholder {
+      font-size: 12px;
+      letter-spacing: 0.01em;
+      line-height: 1.167;
+      color: rgba(117, 117, 117, 0.5);
+    }
+
+    &:focus {
+      border-color: $hero-button-color;
+    }
+  }
+
+  &__checkbox-label {
+    @include fonts(12px, 1.21, 0.03em, 400);
+
+    @media screen and (max-width: 479px) {
+      display: inline-block;
+    }
+
+    @media screen and (min-width: 1199px) {
+      @include fonts(14px, 1.71, 0.03em, 400);
+    }
+
+    @extend %align-items;
+    margin-bottom: 30px;
+  }
+
+  &__icon {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: 12px;
+    transform: translateY(-50%);
+    top: 50%;
+    transition: fill $transition-time $transition-func;
+  }
+
+  &__modal-link {
+    color: $hero-button-color;
+    text-decoration-skip-ink: none;
+  }
+
+  &__icon-wrapper {
+    @media screen and (max-width: 479px) {
+      display: inline-block;
+    }
+
+    height: 16px;
+    width: 15px;
+    border: 1.8px solid $caption-color;
+    border-radius: 2px;
+    margin-right: 8px;
+    @extend %align-items;
+    cursor: pointer;
+    @include transitions($transition-time,
+      $transition-func,
+      background-color,
+      border-color);
+  }
+
+  &__check-icon {
+    height: 8px;
+    width: 11px;
+  }
+
+  &__checkbox:checked+&__checkbox-label &__icon-wrapper {
+    background-color: $hero-button-color;
+    border: none;
+  }
+
+  &__checkbox-label:hover+&__checkbox-label &__icon-wrapper,
+  &__checkbox:focus+&__checkbox-label &__icon-wrapper {
+    border: 1.8px solid $hero-button-color;
+  }
+}

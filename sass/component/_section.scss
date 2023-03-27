@@ -1,0 +1,23 @@
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
+    &__container {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    &_pin_up {
+        padding-top: 0;
+    }
+
+    &_color_grey {
+        background-color: $team-section-color;
+    }
+}
+

@@ -1,0 +1,81 @@
+.benefits-list {
+  @extend %list;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: -30px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+    margin-right: -30px;
+  }
+
+  &__item {
+    @media screen and (max-width: 1199px) {
+      margin-bottom: $card-set-gap;
+    }
+    @media screen and (min-width: 768px) {
+      @include size-flex-item(2, 15px);
+
+      &:nth-child(2n + 1) {
+        margin-right: $card-set-gap;
+      }
+    }
+    @media screen and (min-width: 1200px) {
+      margin-right: $card-set-gap;
+      @include size-flex-item(4, $card-set-gap);
+    }
+  }
+
+  &__thumb {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: $card-set-gap;
+    background-color: $team-section-color;
+    border-radius: 4px;
+    height: 120px;
+    @media screen and (min-width: 480px) {
+      width: 450px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
+  }
+
+  &__description {
+    line-height: 1.714;
+  }
+
+  &__title {
+    margin-bottom: 10px;
+    color: $caption-color;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    @media screen and (max-width: 767px) {
+      text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+      text-align: inherit;
+    }
+
+    @media screen and (min-width: 1200px) {
+      text-align: inherit;
+    }
+  }
+
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
+}

@@ -1,0 +1,27 @@
+.button-menu {
+  min-width: 40px;
+  min-height: 40px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+
+  @media screen and (min-width: 766px) {
+    display: none;
+  }
+
+  &__icon {
+    transition: fill $transition-time $transition-func;
+  }
+
+  &:focus &__icon,
+  &:hover &__icon {
+    fill: $hero-button-color;
+  }
+
+  &_cross {
+    margin-left: auto;
+    margin-right: 15px;
+    margin-top: 10px;
+    display: block;
+  }
+}

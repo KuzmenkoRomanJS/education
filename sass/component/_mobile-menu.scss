@@ -1,0 +1,79 @@
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: $main-white-color;
+  //   z-index: 9999;
+  transform: translateX(-130%);
+  @include transitions(
+    $transition-time,
+    $transition-func,
+    transform
+  );
+
+  @media (min-width: 767px) {
+    display: none;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0 0 48px 40px;
+  }
+
+  &.is-open {
+    transform: translateX(0);
+  }
+
+  &__list {
+    @extend %list;
+    &_contacts {
+      margin-bottom: 64px;
+    }
+  }
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+    &:last-child {
+      margin-bottom: 50px;
+    }
+  }
+  &__link {
+    @extend %link;
+    @include fonts(40px, 1.175, 0.02em, 500);
+    color: $caption-color;
+    @media screen and (max-width: 479px) {
+      font-size: 6vw;
+    }
+
+    &_current {
+      color: $link-hover-color;
+    }
+    &:hover,
+    &:focus {
+      color: $link-hover-color;
+    }
+    &_phone {
+      font-size: 34px;
+      line-height: 1.17;
+      
+      @media screen and (max-width: 479px) {
+        font-size: 6vw;
+      }
+    }
+    &_email {
+      color: $main-body-color;
+      font-size: 24px;
+      line-height: 1.16;
+
+      @media screen and (max-width: 479px) {
+        font-size: 6vw;
+      }
+    }
+  }
+}

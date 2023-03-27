@@ -1,0 +1,31 @@
+.header__logo {
+    @extend %link;
+    @include fonts(24px, 1.16, inherit, 700);
+
+    @media screen and (min-width: 1199px) {
+        @include fonts(26px, 1.19, inherit, 700);
+    }
+
+    &_span {
+        color: $logo-color;
+    }
+
+    &_color_black {
+        color: $caption-color;
+        font-family: Raleway, sans-serif;
+        padding-top: 24px;
+        padding-bottom: 25px;
+
+        @media screen and (max-width: 767px) {
+            padding-top: 16px;
+            padding-bottom: 16px;
+        }
+    }
+
+    &_color_white {
+        color: $main-white-color;
+        font-family: Raleway, sans-serif;
+        display: block;
+        margin-bottom: 20px;
+    }
+}

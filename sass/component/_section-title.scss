@@ -1,0 +1,10 @@
+.section-title {
+  margin-bottom: 30px;
+  color: $caption-color;
+  text-align: center;
+  @include fonts(28px, 1.17, inherit, 700);
+  @media screen and (min-width: 1200px) {
+    @include fonts(36px, 1.17, inherit, 700);
+    margin-bottom: 50px;
+  }
+}
