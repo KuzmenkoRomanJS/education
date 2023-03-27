@@ -2,7 +2,9 @@
 Some education folders with learning from scratch the skills needed for a Front-End Developer
 
 HTML&CSS HW
-#1-7 HW in folder. #8 - at the root of the folder
+<br />
+#1-7 HW in folder. #8 - at the root of the folder 
+<br />
 1. HTML layout.
 2. HTML+CSS layout (color+text styling).
 3. HTML+CSS layout (margin+padding properties & flexbox).
@@ -14,4 +16,4 @@ HTML&CSS HW
 
 JS HW
 <br />
-#9. UPD.
+9. UPD.
