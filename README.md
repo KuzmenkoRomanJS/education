@@ -1,7 +1,7 @@
 # Education Rep
 Some education folders with learning from scratch the skills needed for a Front-End Developer
 
-HTML&CSS HW
+<b>HTML&CSS HW</b>
 <br />
 #1-7 HW in folder. #8 - at the root of the folder 
 <br />
@@ -14,6 +14,6 @@ HTML&CSS HW
 7. SCSS & BEM refactoring.
 8. SCSS & BEM refactoring. Add media queries.
 
-JS HW
+<b>JS HW</b>
 <br />
 9. UPD.
