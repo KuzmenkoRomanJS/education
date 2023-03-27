@@ -13,4 +13,5 @@ HTML&CSS HW
 8. SCSS & BEM refactoring. Add media queries.
 
 JS HW
-9. UPD.
+<br />
+#9. UPD.
