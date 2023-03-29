@@ -1,6 +1,6 @@
 .social-links {
   @extend %list;
-  display: flex;
+  @extend %align-items;
 
   &__mobile-menu {
     margin-bottom: 48px;
